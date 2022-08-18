@@ -14,7 +14,26 @@
   "packageRules": [
     {
       "matchUpdateTypes": ["minor", "patch"],
-      "automerge": true
+      "automerge": true,
+      "schedule": ["every monday"]
+    },
+    {
+      "matchPackageNames": [
+        "gradle",
+        "org.danilopianini.git-sensitive-semantic-versioning-gradle-plugin"
+      ],
+      "matchDepTypes": ["devDependencies", "plugin"],
+      "semanticCommitType": "build"
+    },
+    {
+      "matchPackageNames": [
+        "org.junit.jupiter"
+      ],
+      "semanticCommitType": "test"
+    },
+    {
+      "matchDepTypes": ["action"],
+      "semanticCommitType": "ci"
     }
   ]
 }
