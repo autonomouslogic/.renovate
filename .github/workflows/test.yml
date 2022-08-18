@@ -1,0 +1,15 @@
+name: Test
+on:
+  push:
+  pull_request:
+jobs:
+  preset:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      RENOVATE_CONFIG_FILE: default.json
+    steps:
+      - name: Checkout
+        uses: actions/checkout
+      - name: Validate config
+        run: npx -p renovate renovate-config-validator
