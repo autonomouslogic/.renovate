@@ -23,17 +23,20 @@
         "org.danilopianini.git-sensitive-semantic-versioning-gradle-plugin"
       ],
       "matchDepTypes": ["devDependencies", "plugin"],
-      "semanticCommitType": "build"
+      "semanticCommitType": "build",
+      "groupName": "dev dependencies"
     },
     {
       "matchPackageNames": [
         "org.junit.jupiter"
       ],
-      "semanticCommitType": "test"
+      "semanticCommitType": "test",
+      "groupName": "test dependencies"
     },
     {
       "matchDepTypes": ["action"],
-      "semanticCommitType": "ci"
+      "semanticCommitType": "ci",
+      "groupName": "ci dependencies"
     }
   ]
 }
