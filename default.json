@@ -14,8 +14,7 @@
   "packageRules": [
     {
       "matchUpdateTypes": ["minor", "patch"],
-      "automerge": true,
-      "schedule": ["every monday"]
+      "automerge": true
     },
     {
       "matchPackageNames": [
