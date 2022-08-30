@@ -24,19 +24,22 @@
       ],
       "matchDepTypes": ["devDependencies", "plugin"],
       "semanticCommitType": "build",
-      "groupName": "dev dependencies"
+      "groupName": "dev dependencies",
+      "groupSlug": "dev-dependencies"
     },
     {
       "matchPackageNames": [
         "org.junit.jupiter"
       ],
       "semanticCommitType": "test",
-      "groupName": "test dependencies"
+      "groupName": "test dependencies",
+      "groupSlug": "test-dependencies"
     },
     {
       "matchDepTypes": ["action"],
       "semanticCommitType": "ci",
-      "groupName": "ci dependencies"
+      "groupName": "ci dependencies",
+      "groupSlug": "ci-dependencies"
     }
   ]
 }
