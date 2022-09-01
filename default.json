@@ -14,32 +14,8 @@
   "packageRules": [
     {
       "matchUpdateTypes": ["minor", "patch"],
-      "automerge": true
-    },
-    {
-      "matchPackageNames": [
-        "gradle",
-        "org.danilopianini.git-sensitive-semantic-versioning-gradle-plugin",
-        "io.freefair.lombok"
-      ],
-      "matchDepTypes": ["devDependencies", "plugin"],
-      "semanticCommitType": "build",
-      "groupName": "dev dependencies",
-      "groupSlug": "dev-dependencies"
-    },
-    {
-      "matchPackageNames": [
-        "org.junit.jupiter"
-      ],
-      "semanticCommitType": "test",
-      "groupName": "test dependencies",
-      "groupSlug": "test-dependencies"
-    },
-    {
-      "matchDepTypes": ["action"],
-      "semanticCommitType": "ci",
-      "groupName": "ci dependencies",
-      "groupSlug": "ci-dependencies"
+      "automerge": true,
+      "schedule": ["every monday"]
     }
   ]
 }
