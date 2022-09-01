@@ -19,7 +19,8 @@
     {
       "matchPackageNames": [
         "gradle",
-        "org.danilopianini.git-sensitive-semantic-versioning-gradle-plugin"
+        "org.danilopianini.git-sensitive-semantic-versioning-gradle-plugin",
+        "io.freefair.lombok"
       ],
       "matchDepTypes": ["devDependencies", "plugin"],
       "semanticCommitType": "build",
