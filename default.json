@@ -16,7 +16,7 @@
     {
       "matchUpdateTypes": ["minor", "patch"],
       "automerge": true,
-      "schedule": ["every monday"]
+      "schedule": ["on the first monday of the month"]
     }
   ]
 }
